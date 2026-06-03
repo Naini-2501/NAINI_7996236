@@ -1,0 +1,9 @@
+SELECT
+name,
+email,
+city,
+registration_date
+
+FROM users
+
+ORDER BY registration_date DESC;

@@ -1,0 +1,24 @@
+SELECT
+e.title,
+e.city
+
+FROM events e
+
+LEFT JOIN feedback f
+ON e.event_id = f.event_id
+
+WHERE f.feedback_id IS NULL;
+INSERT INTO events
+(title,description,city,start_date,end_date,status,organizer_id)
+
+VALUES
+
+(
+'Startup Summit',
+'Entrepreneurship Event',
+'Bangalore',
+'2025-09-01 10:00:00',
+'2025-09-01 17:00:00',
+'upcoming',
+3
+);

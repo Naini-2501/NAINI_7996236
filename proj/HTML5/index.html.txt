@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Community Event Portal</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+
+            EventPortal
+
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+            <li><a href="#register">Register</a></li>
+
+            <li><a href="#feedback">Feedback</a></li>
+
+            <li><a href="#video">Video</a></li>
+
+            <li><a href="#location">Location</a></li>
+
+            <li><a href="help.html"
+                   target="_blank">Help</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Welcome Banner -->
+
+    <section id="home">
+
+        <div id="welcomeBanner">
+
+            <h1>
+
+                Welcome to Community Event Portal
+
+            </h1>
+
+            <p>
+
+                Register for exciting community events,
+                workshops,
+                and festivals.
+
+            </p>
+
+            <p>
+
+                <span style="color:red;
+                             font-weight:bold;">
+
+                    Special Offer:
+                    Free Entry for First 100 Registrations!
+
+                </span>
+
+            </p>
+
+            <p class="highlight">
+
+                Enjoy music,
+                food,
+                and technology events near you.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery">
+
+        <h2>
+
+            Event Gallery
+
+        </h2>
+
+        <table>
+
+            <tr>
+
+                <td>
+
+                    <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600"
+                         alt="Music Event"
+                         title="Music Festival"
+                         class="gallery-img">
+
+                    <p class="caption">
+
+                        Music Festival
+
+                    </p>
+
+                </td>
+
+                <td>
+
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600"
+                         alt="Food Event"
+                         title="Food Carnival"
+                         class="gallery-img">
+
+                    <p class="caption">
+
+                        Food Carnival
+
+                    </p>
+
+                </td>
+
+                <td>
+
+                    <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600"
+                         alt="Art Event"
+                         title="Art Workshop"
+                         class="gallery-img">
+
+                    <p class="caption">
+
+                        Art Workshop
+
+                    </p>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <td>
+
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600"
+                         alt="Dance Event"
+                         title="Dance Show"
+                         class="gallery-img">
+
+                    <p class="caption">
+
+                        Dance Show
+
+                    </p>
+
+                </td>
+
+                <td>
+
+                    <img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?w=600"
+                         alt="Workshop"
+                         title="Coding Workshop"
+                         class="gallery-img">
+
+                    <p class="caption">
+
+                        Coding Workshop
+
+                    </p>
+
+                </td>
+
+                <td>
+
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600"
+                         alt="Conference"
+                         title="Community Meetup"
+                         class="gallery-img">
+
+                    <p class="caption">
+
+                        Community Meetup
+
+                    </p>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Registration Form -->
+
+    <section id="register">
+
+        <h2>
+
+            Event Registration
+
+        </h2>
+
+        <form id="registrationForm">
+
+            <input type="text"
+                   placeholder="Enter your name"
+                   required
+                   autofocus>
+
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <input type="date"
+                   required>
+
+            <input type="text"
+                   id="phone"
+                   placeholder="Enter phone number"
+                   onblur="validatePhone()">
+
+            <select id="eventType"
+                    onchange="showFee()">
+
+                <option>Select Event</option>
+
+                <option value="500">Music Festival</option>
+
+                <option value="300">Food Carnival</option>
+
+                <option value="700">Coding Workshop</option>
+
+            </select>
+
+            <p id="eventFee">
+
+            </p>
+
+            <textarea id="feedbackText"
+                      placeholder="Enter your message"
+                      onkeyup="countCharacters()"></textarea>
+
+            <p id="charCount">
+
+                Characters: 0
+
+            </p>
+
+            <button type="button"
+                    onclick="showConfirmation()">
+
+                Register Now
+
+            </button>
+
+            <output id="confirmationMessage">
+
+            </output>
+
+        </form>
+
+    </section>
+
+    <!-- FEEDBACK SECTION -->
+
+<section id="feedback"
+         class="section">
+
+    <div class="section-header">
+
+        <h2>
+
+            Community Feedback
+
+        </h2>
+
+    </div>
+
+    <div class="feedback-container">
+
+        <div class="feedback-card">
+
+            <div class="profile">
+
+                <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+                <div>
+
+                    <h3>
+
+                        Ananya Reddy
+
+                    </h3>
+
+                    <span>
+
+                        Volunteer
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+
+                The community programs are very helpful
+                and well organized. Loved participating
+                in the awareness activities.
+
+            </p>
+
+        </div>
+
+        <div class="feedback-card">
+
+            <div class="profile">
+
+                <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+                <div>
+
+                    <h3>
+
+                        Rahul Sharma
+
+                    </h3>
+
+                    <span>
+
+                        Resident
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+
+                Amazing platform for connecting people
+                and staying updated about local events
+                and services.
+
+            </p>
+
+        </div>
+
+        <div class="feedback-card">
+
+            <div class="profile">
+
+                <img src="https://randomuser.me/api/portraits/women/68.jpg">
+
+                <div>
+
+                    <h3>
+
+                        Sneha Patel
+
+                    </h3>
+
+                    <span>
+
+                        Student Volunteer
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <p>
+
+                The volunteering experience was wonderful.
+                The website design and updates are really useful.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <!-- VIDEO SECTION -->
+
+<section class="section">
+
+    <div class="section-header">
+
+        <h2>
+
+            Community Awareness Video
+
+        </h2>
+
+    </div>
+
+    <div class="video-container">
+
+        <video controls
+               autoplay
+               muted
+               loop
+               playsinline>
+
+            <source src="promo.mp4"
+                    type="video/mp4">
+
+            Your browser does not support video.
+
+        </video>
+
+    </div>
+
+</section>
+
+    <!-- User Preferences -->
+
+    <section id="preferences">
+
+        <h2>
+
+            Save Your Preference
+
+        </h2>
+
+        <select id="preferredEvent">
+
+            <option>Music Festival</option>
+
+            <option>Food Carnival</option>
+
+            <option>Coding Workshop</option>
+
+        </select>
+
+        <button onclick="savePreference()">
+
+            Save Preference
+
+        </button>
+
+        <button onclick="clearPreferences()">
+
+            Clear Preferences
+
+        </button>
+
+    </section>
+
+    <!-- Geolocation -->
+
+    <section id="location">
+
+        <h2>
+
+            Find Nearby Events
+
+        </h2>
+
+        <button onclick="findLocation()">
+
+            Find Nearby Events
+
+        </button>
+
+        <p id="coordinates">
+
+        </p>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Community Event Portal
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

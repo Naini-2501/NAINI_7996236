@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- GOOGLE FONT -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- JQUERY -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js">
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- LOADER -->
+    <!-- ========================= -->
+
+    <div id="loader">
+
+        <div class="spinner">
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                CommunityHub
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#events">Events</a></li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li><a href="#register">Register</a></li>
+
+                <li><a href="#feedback">Feedback</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
+
+    <section id="home"
+             class="hero">
+
+        <div class="overlay">
+
+        </div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+
+                SMART COMMUNITY PORTAL
+
+            </span>
+
+            <h1>
+
+                Bringing Communities Together
+
+            </h1>
+
+            <p>
+
+                Explore local events,
+                volunteer programs,
+                awareness campaigns
+                and community activities.
+
+            </p>
+
+            <button id="exploreBtn">
+
+                Explore Events
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SEARCH + FILTER -->
+    <!-- ========================= -->
+
+    <section class="controls-section">
+
+        <input type="text"
+               id="searchInput"
+               placeholder="Search Events...">
+
+        <select id="categoryFilter">
+
+            <option value="all">
+
+                All Categories
+
+            </option>
+
+            <option value="Health">
+
+                Health
+
+            </option>
+
+            <option value="Education">
+
+                Education
+
+            </option>
+
+            <option value="Environment">
+
+                Environment
+
+            </option>
+
+            <option value="Cultural">
+
+                Cultural
+
+            </option>
+
+        </select>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- EVENTS -->
+    <!-- ========================= -->
+
+    <section id="events"
+             class="section">
+
+        <div class="section-title">
+
+            <h2>
+
+                Community Events
+
+            </h2>
+
+        </div>
+
+        <div id="eventContainer"
+             class="event-container">
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- VIDEO -->
+    <!-- ========================= -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>
+
+                Community Awareness Video
+
+            </h2>
+
+        </div>
+
+        <div class="video-container">
+
+            <video controls
+                   autoplay
+                   muted
+                   loop>
+
+                <source src="promo.mp4"
+                        type="video/mp4">
+
+            </video>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- GALLERY -->
+    <!-- ========================= -->
+
+    <section id="gallery"
+             class="section">
+
+        <div class="section-title">
+
+            <h2>
+
+                Community Gallery
+
+            </h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600">
+
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1600">
+
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=1600">
+
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600">
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- REGISTRATION -->
+    <!-- ========================= -->
+
+    <section id="register"
+             class="section">
+
+        <div class="section-title">
+
+            <h2>
+
+                Volunteer Registration
+
+            </h2>
+
+        </div>
+
+        <form id="registerForm"
+              class="register-form">
+
+            <input type="text"
+                   name="name"
+                   placeholder="Full Name">
+
+            <small class="error">
+
+            </small>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Email Address">
+
+            <small class="error">
+
+            </small>
+
+            <select name="event">
+
+                <option value="">
+
+                    Select Event
+
+                </option>
+
+                <option>
+
+                    Health Camp
+
+                </option>
+
+                <option>
+
+                    Tree Plantation
+
+                </option>
+
+                <option>
+
+                    Cultural Fest
+
+                </option>
+
+            </select>
+
+            <small class="error">
+
+            </small>
+
+            <button type="submit"
+                    id="registerBtn">
+
+                Register Now
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FEEDBACK -->
+    <!-- ========================= -->
+
+    <section id="feedback"
+             class="section">
+
+        <div class="section-title">
+
+            <h2>
+
+                Community Feedback
+
+            </h2>
+
+        </div>
+
+        <div class="feedback-container">
+
+            <div class="feedback-card">
+
+                <h3>
+
+                    Ananya
+
+                </h3>
+
+                <p>
+
+                    Amazing platform for community awareness.
+
+                </p>
+
+            </div>
+
+            <div class="feedback-card">
+
+                <h3>
+
+                    Rahul
+
+                </h3>
+
+                <p>
+
+                    Loved participating in volunteering activities.
+
+                </p>
+
+            </div>
+
+            <div class="feedback-card">
+
+                <h3>
+
+                    Sneha
+
+                </h3>
+
+                <p>
+
+                    Very useful and responsive website.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CONTACT -->
+    <!-- ========================= -->
+
+    <section id="contact"
+             class="section">
+
+        <div class="contact-box">
+
+            <h2>
+
+                Contact Us
+
+            </h2>
+
+            <p>
+
+                📍 Hyderabad, India
+
+            </p>
+
+            <p>
+
+                📞 +91 9876543210
+
+            </p>
+
+            <p>
+
+                ✉ communityhub@gmail.com
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 CommunityHub | All Rights Reserved
+
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

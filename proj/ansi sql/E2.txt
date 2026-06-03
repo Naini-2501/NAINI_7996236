@@ -1,0 +1,12 @@
+SELECT
+e.title,
+AVG(f.rating) AS average_rating
+
+FROM feedback f
+
+JOIN events e
+ON f.event_id = e.event_id
+
+GROUP BY e.title
+
+ORDER BY average_rating DESC;

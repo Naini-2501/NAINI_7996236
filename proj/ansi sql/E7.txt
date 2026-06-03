@@ -1,0 +1,17 @@
+SELECT
+e.title,
+
+COUNT(f.feedback_id)
+AS total_feedbacks,
+
+AVG(f.rating)
+AS average_rating
+
+FROM events e
+
+LEFT JOIN feedback f
+ON e.event_id = f.event_id
+
+GROUP BY e.title
+
+HAVING AVG(f.rating) > 1;

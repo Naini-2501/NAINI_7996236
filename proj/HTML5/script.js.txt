@@ -1,0 +1,161 @@
+function validatePhone() {
+
+    let phone = document.getElementById("phone").value;
+
+    if(phone.length < 10) {
+
+        alert("Phone number must contain 10 digits");
+
+    }
+
+}
+
+function showFee() {
+
+    let fee = document.getElementById("eventType").value;
+
+    document.getElementById("eventFee").innerHTML =
+    "Event Fee: ₹" + fee;
+
+}
+
+function showConfirmation() {
+
+    document.getElementById("confirmationMessage").innerHTML =
+    "Registration Successful!";
+
+}
+
+function enlargeImage(image) {
+
+    image.style.transform = "scale(1.2)";
+
+}
+
+function countCharacters() {
+
+    let text =
+    document.getElementById("feedbackText").value;
+
+    document.getElementById("charCount").innerHTML =
+    "Characters: " + text.length;
+
+}
+
+function videoReady() {
+
+    document.getElementById("videoMessage").innerHTML =
+    "Video ready to play";
+
+}
+
+/* Warning before leaving page */
+
+window.onbeforeunload = function() {
+
+    return "Your form is not submitted.";
+
+}
+
+/* Save Preference */
+
+function savePreference() {
+
+    let preference =
+    document.getElementById("preferredEvent").value;
+
+    localStorage.setItem("preferredEvent", preference);
+
+    sessionStorage.setItem("preferredEvent", preference);
+
+    alert("Preference Saved");
+
+}
+
+/* Load Preference */
+
+window.onload = function() {
+
+    let savedPreference =
+    localStorage.getItem("preferredEvent");
+
+    if(savedPreference) {
+
+        document.getElementById("preferredEvent").value =
+        savedPreference;
+
+    }
+
+}
+
+/* Clear Storage */
+
+function clearPreferences() {
+
+    localStorage.clear();
+
+    sessionStorage.clear();
+
+    alert("Preferences Cleared");
+
+}
+
+/* Geolocation */
+
+function findLocation() {
+
+    if(navigator.geolocation) {
+
+        navigator.geolocation.getCurrentPosition(
+
+            showPosition,
+            showError,
+            {
+
+                enableHighAccuracy: true,
+
+                timeout: 5000
+
+            }
+
+        );
+
+    }
+
+}
+
+function showPosition(position) {
+
+    document.getElementById("coordinates").innerHTML =
+
+    "Latitude: " +
+    position.coords.latitude +
+
+    "<br>Longitude: " +
+    position.coords.longitude;
+
+}
+
+function showError(error) {
+
+    switch(error.code) {
+
+        case error.PERMISSION_DENIED:
+
+            alert("Location permission denied");
+
+            break;
+
+        case error.TIMEOUT:
+
+            alert("Request timeout");
+
+            break;
+
+        default:
+
+            alert("Location unavailable");
+
+    }
+
+}
