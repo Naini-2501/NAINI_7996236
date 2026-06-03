@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Community Event Portal</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Fixed Contact Button -->
+
+    <div class="contact-button">
+
+        Contact Us
+
+    </div>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <div class="logo">
+
+            EventPortal
+
+        </div>
+
+        <ul>
+
+            <li><a href="#home">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#events">Events</a></li>
+
+            <li><a href="#schedule">Schedule</a></li>
+
+            <li><a href="#gallery">Gallery</a></li>
+
+            <li><a href="#news">News</a></li>
+
+            <li><a href="#register">Register</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <header class="hero"
+            id="home">
+
+        <!-- Badge -->
+
+        <div class="badge">
+
+            Live Events 2026
+
+        </div>
+
+        <div class="overlay">
+
+            <h1>
+
+                Community Event Portal
+
+            </h1>
+
+            <p class="intro">
+
+                Experience unforgettable events,
+                exciting celebrations,
+                food festivals,
+                music nights,
+                and inspiring community gatherings.
+
+            </p>
+
+            <button>
+
+                Explore Events
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- About -->
+
+    <section id="about">
+
+        <h2>
+
+            About Us
+
+        </h2>
+
+        <p class="about-text">
+
+            Community Event Portal helps people
+            discover exciting music,
+            food,
+            technology,
+            and cultural events happening around them.
+
+        </p>
+
+    </section>
+
+    <!-- Events -->
+
+    <section id="events">
+
+        <h2>
+
+            Featured Events
+
+        </h2>
+
+        <div class="cards-container">
+
+            <!-- Card 1 -->
+
+            <div class="event-card">
+
+                <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800"
+                     alt="Music Festival">
+
+                <div class="card-content">
+
+                    <h3>
+
+                        Music Festival
+
+                    </h3>
+
+                    <p>
+
+                        Enjoy electrifying performances
+                        and live music experiences.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="event-card">
+
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800"
+                     alt="Food Carnival">
+
+                <div class="card-content">
+
+                    <h3>
+
+                        Food Carnival
+
+                    </h3>
+
+                    <p>
+
+                        Explore cuisines,
+                        desserts,
+                        and cultural food experiences.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="event-card">
+
+                <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800"
+                     alt="Art Workshop">
+
+                <div class="card-content">
+
+                    <h3>
+
+                        Art Workshop
+
+                    </h3>
+
+                    <p>
+
+                        Learn creativity,
+                        painting,
+                        and modern art techniques.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Schedule -->
+
+    <section id="schedule">
+
+        <h2>
+
+            Event Schedule
+
+        </h2>
+
+        <table class="event-table">
+
+            <tr>
+
+                <th>Event</th>
+
+                <th>Date</th>
+
+                <th>Location</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Music Festival</td>
+
+                <td>10 June 2026</td>
+
+                <td>Hyderabad</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Food Carnival</td>
+
+                <td>15 June 2026</td>
+
+                <td>Delhi</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Art Workshop</td>
+
+                <td>20 June 2026</td>
+
+                <td>Bangalore</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section id="gallery">
+
+        <h2>
+
+            Event Gallery
+
+        </h2>
+
+        <div class="gallery-container">
+
+            <img src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?w=800">
+
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800">
+
+            <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800">
+
+        </div>
+
+    </section>
+
+    <!-- News -->
+
+    <section id="news">
+
+        <h2>
+
+            Latest News
+
+        </h2>
+
+        <div class="news-section">
+
+            Community Event Portal is organizing
+            multiple cultural,
+            technology,
+            food,
+            and music events across India.
+            Participants can register online
+            and receive updates instantly.
+            Exciting workshops,
+            performances,
+            competitions,
+            and networking opportunities
+            are available for all age groups.
+            The portal also introduces volunteer programs,
+            student innovation events,
+            and startup showcases for young entrepreneurs.
+
+        </div>
+
+    </section>
+
+    <!-- Register -->
+
+    <section id="register">
+
+        <h2>
+
+            Register Now
+
+        </h2>
+
+        <form class="registration-form">
+
+            <input type="text"
+                   placeholder="Enter your name">
+
+            <input type="email"
+                   placeholder="Enter your email">
+
+            <select>
+
+                <option>Select Event</option>
+
+                <option>Music Festival</option>
+
+                <option>Food Carnival</option>
+
+                <option>Art Workshop</option>
+
+            </select>
+
+            <button type="submit">
+
+                Register
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact">
+
+        <h2>
+
+            Contact Us
+
+        </h2>
+
+        <p class="contact-text">
+
+            Email: support@eventportal.com
+
+        </p>
+
+        <p class="contact-text">
+
+            Phone: +91 9876543210
+
+        </p>
+
+    </section>
+
+</body>
+
+</html>

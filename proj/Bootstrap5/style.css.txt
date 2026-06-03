@@ -1,0 +1,553 @@
+/* ========================= */
+/* GOOGLE FONT */
+/* ========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0F172A;
+
+    overflow-x:hidden;
+
+    scroll-behavior:smooth;
+
+}
+
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar{
+
+    backdrop-filter:blur(10px);
+
+}
+
+.navbar-brand{
+
+    font-size:32px;
+
+    letter-spacing:1px;
+
+}
+
+.nav-link{
+
+    font-size:17px;
+
+    transition:0.3s;
+
+    margin-left:10px;
+
+}
+
+.nav-link:hover{
+
+    color:#38BDF8 !important;
+
+}
+
+.nav-link.active{
+
+    color:#38BDF8 !important;
+
+    font-weight:600;
+
+}
+/* ========================= */
+/* HERO SECTION */
+/* ========================= */
+
+.hero-section{
+
+    min-height:100vh;
+
+    background:#020617;
+
+    position:relative;
+
+    padding:120px 20px;
+
+}
+
+/* GLOW EFFECTS */
+
+.glow{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:0.5;
+
+}
+
+.glow1{
+
+    width:300px;
+
+    height:300px;
+
+    background:#38BDF8;
+
+    top:-50px;
+
+    left:-50px;
+
+}
+
+.glow2{
+
+    width:300px;
+
+    height:300px;
+
+    background:#8B5CF6;
+
+    bottom:-50px;
+
+    right:-50px;
+
+}
+
+/* HERO TITLE */
+
+.hero-title{
+
+    line-height:1.2;
+
+}
+
+/* GRADIENT TEXT */
+
+.gradient-text{
+
+    background:linear-gradient(to right,#38BDF8,#8B5CF6,#EC4899);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* TYPING TEXT */
+
+.typing-text{
+
+    color:#38BDF8;
+
+    font-weight:600;
+
+}
+
+/* HERO IMAGE */
+
+.hero-image{
+
+    border-radius:30px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,0.5);
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* FLOAT ANIMATION */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ========================= */
+/* STATS */
+/* ========================= */
+
+.stats-section{
+
+    background:#0F172A;
+
+}
+
+.stats-card{
+
+    background:rgba(255,255,255,0.05);
+
+    padding:40px;
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+    transition:0.4s;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+
+.stats-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stats-card h1{
+
+    color:#38BDF8;
+
+    font-size:55px;
+
+    font-weight:700;
+
+}
+
+.stats-card p{
+
+    color:white;
+
+    font-size:18px;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .hero-title{
+
+        font-size:55px;
+
+    }
+
+    .typing-text{
+
+        font-size:24px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-title{
+
+        font-size:40px;
+
+    }
+
+    .typing-text{
+
+        font-size:18px;
+
+    }
+
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.card{
+
+    border:none;
+
+    overflow:hidden;
+
+    transition:0.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* CARD IMAGE */
+
+.card img{
+
+    height:250px;
+
+    object-fit:cover;
+
+}
+
+/* CARD TITLE */
+
+.card-title{
+
+    font-weight:700;
+
+}
+
+/* ========================= */
+/* FEATURES */
+/* ========================= */
+
+#features .card{
+
+    border-radius:20px;
+
+}
+
+#features i{
+
+    transition:0.4s;
+
+}
+
+#features .card:hover i{
+
+    transform:scale(1.2);
+
+}
+
+/* ========================= */
+/* PRICING */
+/* ========================= */
+
+#pricing .card{
+
+    border-radius:25px;
+
+    transition:0.4s;
+
+}
+
+#pricing .card:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ========================= */
+/* ACCORDION */
+/* ========================= */
+
+.accordion-button{
+
+    font-weight:600;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+
+footer i{
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+footer i:hover{
+
+    color:#38BDF8;
+
+    transform:translateY(-5px);
+
+}
+
+/* ========================= */
+/* MODAL */
+/* ========================= */
+
+.modal-content{
+
+    border-radius:20px;
+
+}
+
+/* ========================= */
+/* SEARCH BAR */
+/* ========================= */
+
+.form-control{
+
+    border-radius:10px;
+
+}
+
+.btn-info{
+
+    border-radius:10px;
+
+}
+
+/* ========================= */
+/* CUSTOM SCROLLBAR */
+/* ========================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0F172A;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#38BDF8;
+
+    border-radius:20px;
+
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media(max-width:992px){
+
+    .hero-section h1{
+
+        font-size:70px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-section{
+
+        text-align:center;
+
+        padding:120px 20px;
+
+    }
+
+    .hero-section h1{
+
+        font-size:50px;
+
+    }
+
+    .hero-section p{
+
+        font-size:18px;
+
+    }
+
+    .navbar-brand{
+
+        font-size:25px;
+
+    }
+
+    .card img{
+
+        height:220px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero-section h1{
+
+        font-size:38px;
+
+    }
+
+    .hero-section p{
+
+        font-size:16px;
+
+    }
+
+    .hero-section .btn{
+
+        width:100%;
+
+        margin-bottom:10px;
+
+    }
+
+    .navbar-brand{
+
+        font-size:22px;
+
+    }
+
+}
+/* ========================= */
+/* SCROLL ANIMATION */
+/* ========================= */
+
+.card{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:0.6s ease;
+
+}
+
+.show-card{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ========================= */
+/* PAGE LOAD EFFECT */
+/* ========================= */
+
+body{
+
+    opacity:0;
+
+    transition:0.5s;
+
+}
+
+body.loaded{
+
+    opacity:1;
+
+}
