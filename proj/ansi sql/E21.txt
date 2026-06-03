@@ -1,0 +1,15 @@
+SELECT
+
+u.name,
+
+COUNT(f.feedback_id)
+AS total_feedbacks
+
+FROM users u
+
+JOIN feedback f
+ON u.user_id = f.user_id
+
+GROUP BY u.name
+
+ORDER BY total_feedbacks DESC;

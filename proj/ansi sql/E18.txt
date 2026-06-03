@@ -1,0 +1,10 @@
+SELECT
+
+u.name
+
+FROM users u
+
+LEFT JOIN registrations r
+ON u.user_id = r.user_id
+
+WHERE r.registration_id IS NULL;

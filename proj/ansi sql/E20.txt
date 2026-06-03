@@ -1,0 +1,14 @@
+SELECT
+
+title,
+
+TIMESTAMPDIFF
+(
+HOUR,
+start_date,
+end_date
+)
+
+AS total_hours
+
+FROM events;

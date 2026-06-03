@@ -1,0 +1,13 @@
+SELECT
+
+e.title,
+
+COUNT(f.feedback_id)
+AS total_feedback
+
+FROM events e
+
+LEFT JOIN feedback f
+ON e.event_id = f.event_id
+
+GROUP BY e.title;
